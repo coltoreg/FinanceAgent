@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "finagent"
+version = "0.1.0"
+description = "Multi-Agent Investment Analysis System"
+requires-python = ">=3.11"
+dependencies = [
+    # Core AI Framework
+    "anthropic[bedrock]>=0.40.0",  # [bedrock] extra pulls in boto3
+    "langgraph>=0.2.0",
+    "langchain-core>=0.3.0",
+    # Financial Data
+    "yfinance>=0.2.40",
+    # Document Parsing & RAG
+    "llama-parse>=0.5.0",
+    "chromadb>=0.5.0",
+    "rank-bm25>=0.2.2",
+    # Data Processing
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    # CLI & Display
+    "typer>=0.12.0",
+    "rich>=13.0.0",
+    # Tracing & Observability
+    "langsmith>=0.2.0",
+    # HTTP & Utils
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    # Web API
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.29.0",
+    "python-multipart>=0.0.9",
+]
+
+[project.scripts]
+finagent = "main:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

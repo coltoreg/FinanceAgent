@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-700;
+  }
+  body {
+    @apply bg-[#0a0f1a] text-gray-100 font-mono antialiased;
+  }
+  ::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-gray-900 border border-gray-700 rounded-lg;
+  }
+
+  .btn-primary {
+    @apply bg-cyan-500 hover:bg-cyan-400 text-gray-950 font-semibold px-4 py-2 rounded
+           transition-colors duration-150 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-800 hover:bg-gray-700 text-gray-200 font-medium px-4 py-2 rounded
+           border border-gray-600 transition-colors duration-150;
+  }
+
+  .tab-btn {
+    @apply px-4 py-2 text-sm font-medium border-b-2 transition-colors duration-150
+           text-gray-400 border-transparent hover:text-gray-200 hover:border-gray-500;
+  }
+
+  .tab-btn.active {
+    @apply text-cyan-400 border-cyan-400;
+  }
+
+  .badge-buy {
+    @apply bg-emerald-900/50 text-emerald-400 border border-emerald-700/50 px-2 py-0.5 rounded text-xs font-semibold;
+  }
+
+  .badge-sell {
+    @apply bg-red-900/50 text-red-400 border border-red-700/50 px-2 py-0.5 rounded text-xs font-semibold;
+  }
+
+  .badge-hold {
+    @apply bg-yellow-900/50 text-yellow-400 border border-yellow-700/50 px-2 py-0.5 rounded text-xs font-semibold;
+  }
+
+  /* Markdown content styling */
+  .prose-finance {
+    @apply text-gray-300 text-sm leading-relaxed;
+  }
+  .prose-finance h1, .prose-finance h2, .prose-finance h3 {
+    @apply text-cyan-400 font-semibold mt-4 mb-2;
+  }
+  .prose-finance h1 { @apply text-lg; }
+  .prose-finance h2 { @apply text-base; }
+  .prose-finance h3 { @apply text-sm; }
+  .prose-finance p { @apply mb-2; }
+  .prose-finance ul { @apply list-disc list-inside mb-2 space-y-0.5; }
+  .prose-finance ol { @apply list-decimal list-inside mb-2 space-y-0.5; }
+  .prose-finance strong { @apply text-gray-100 font-semibold; }
+  .prose-finance code { @apply bg-gray-800 text-cyan-300 px-1 rounded text-xs; }
+  .prose-finance pre { @apply bg-gray-800 rounded p-3 overflow-x-auto text-xs; }
+  .prose-finance blockquote { @apply border-l-2 border-cyan-700 pl-3 text-gray-400 italic; }
+  .prose-finance hr { @apply border-gray-700 my-3; }
+  .prose-finance table { @apply w-full text-xs border-collapse; }
+  .prose-finance th { @apply border border-gray-700 bg-gray-800 px-2 py-1 text-gray-200; }
+  .prose-finance td { @apply border border-gray-700 px-2 py-1 text-gray-300; }
+}

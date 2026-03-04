@@ -1,0 +1,624 @@
+{
+  "ticker": "NVDA",
+  "year": 2025,
+  "timestamp": "2026-03-03T14:07:20.359512+00:00",
+  "depth": "standard",
+  "investment_rating": "BUY",
+  "fundamental_score": "UNKNOWN",
+  "analyst_thesis": "# NVDA Investment Thesis — Senior Analyst Update\n**Date: March 3, 2026 | Current Price: $182.48 | Prior Ratings: BUY (×2)**\n\n---\n\n## 1. Investment Rating: **BUY**\n*Maintained from prior analyses; conviction held despite technical deterioration*\n\n---\n\n## 2. 12-Month Price Target: **$238** (+30.4% from $182.48)\n\nBlended methodology: DCF intrinsic value ($195.47) + forward P/E re-rating (22.1x → 26x on $215.9B revenue trajectory) + analyst consensus ($264 target, discounted 10% for macro risk). Price target reflects a conservative middle path — not pricing in full consensus upside.\n\n---\n\n## 3. Bull Case\n\n**① AI Supercycle Compounding at Scale**\nFY2026 revenue of $215.94B (+65.5% YoY) with 55.6% net margins generating $120B net income is structurally unprecedented in semiconductor history. The Blackwell architecture refresh cycle is still in early deployment. Hyperscaler CapEx commitments (Microsoft $80B+, Google, Meta) provide 12–18 months of visible revenue coverage. The forward P/E of **22.1x vs. sector avg 24x** is the critical insight — the market is *underpricing near-term earnings power*.\n\n**② CUDA Moat Creates Structural Switching Costs**\nR&D at $18.5B annually deepens the software ecosystem that custom silicon (TPUs, Trainium) cannot replicate at speed. The $2B Lockheed Martin partnership signals revenue diversification into defense AI — a high-margin, geopolitically insulated vertical.\n\n---\n\n## 4. Bear Case\n\n**① Technical Deterioration Near MA200 ($175.21)**\nPre-market price of $177.23 is dangerously proximate to the MA200. MACD histogram is negative and *widening* — selling pressure is accelerating. A confirmed close below $175 triggers Death Cross risk and potential institutional rebalancing toward $165–$150 support. This is a near-term risk of **8–15% additional downside before fundamentals reassert**.\n\n**② Export Controls + Customer Concentration = Demand Cliff Optionality**\nH20/advanced chip restrictions to China remove a meaningful revenue segment. More critically, 5–6 hyperscalers represent the majority of revenue — any deceleration in their AI CapEx (Microsoft/Google earnings disappointment, regulatory scrutiny of AI ROI) could compress both revenue and multiple simultaneously. Trailing P/E of 36.5x leaves **zero margin for error** on a miss.\n\n---\n\n## 5. Key Catalysts\n\n| Catalyst | Timeframe | Bull/Bear |\n|---|---|---|\n| **Q1 FY2027 Earnings + Guidance** | ~May 2026 | 🔑 Most critical — Blackwell ramp visibility |\n| **Hyperscaler CapEx Reports** (MSFT, GOOG, META) | Q1 earnings season | Bull if maintained; Bear if guidance cut |\n| **MA200 Hold or Breach** ($175.21) | Imminent (days) | Technical line in sand |\n| **Export Control Policy Update** | Rolling | Bear if tightened further |\n| **Rubin Architecture Announcement** | H2 2026 | Bull — next product cycle catalyst |\n\n---\n\n## 6. Valuation Assessment\n\n**Fairly valued with asymmetric upside on dips.** The DCF at $195.47 suggests modest 7% upside at current price — not compelling on a risk-adjusted basis. However, the **forward P/E of 22.1x below the sector average** is the valuation anomaly worth exploiting. With $120B net income at 55.6% margins and operating cash flow of $102.7B, NVDA is generating *investment-grade cash flows at growth-stock velocity*. The premium in trailing multiples (P/E 36.5x, P/S 20.5x, P/B 28.2x) is real but defensible given zero leverage (D/E 0.05x) and no parallel in semiconductor profitability history.\n\n**Accumulation zone: $165–$175** offers a materially superior entry if MA200 breaks. At $182, the risk/reward is acceptable but not optimal — position sizing discipline is warranted.\n\n---\n\n## 7. Competitive Position\n\nNVDA is in a category of one. Net margin of 55.6% vs. peers at ~12% (AMD), ~25% (TSMC) is the starkest differentiator. Revenue growth of 65.5% vs. AMD's ~14% and Intel's decline demonstrates the demand gap is widening, not narrowing. The $4.44T market cap makes it among the most valuable companies globally, but the forward P/E *below sector average* is the market's implicit acknowledgment that earnings are catching up to the price. **Competitive position: #1 with increasing distance from #2.** Primary risk is not current competition — it's *future custom silicon adoption* on a 3–5 year horizon.\n\n---\n\n## 8. Confidence Level: **MEDIUM**\n\nFundamental conviction is HIGH. Technical and macro timing confidence is LOW. The combination yields MEDIUM overall. The AI thesis is intact; the entry point timing is uncertain given geopolitical macro pressure (U.S.-Iran, Dow -800), technical MACD deterioration, and proximity to MA200.\n\n---\n\n## 9. vs. Prior Analysis\n\n| Metric | Record 1 (Mar 2026) | Record 2 (Mar 2026) | Current |\n|---|---|---|---|\n| Rating | BUY | BUY | **BUY** ✅ |\n| Price Target | $245 | $230 | **$238** |\n| Key Risk | Concentration | Valuation | **MA200 breach + Export controls** |\n| Conviction | Upgraded | Moderate | **Maintained / Cautious** |\n\n**Thesis evolution:** The rating has been consistently BUY across all three analyses, but this update *moderates* the prior enthusiasm. The FY2026 fundamental improvements confirmed in Record 1 ($245 target) were justified — but the technical deterioration since (pre-market at $177.23 vs. $182.48 ",
+  "final_report": "# NVIDIA Corporation (NVDA) — Final Investment Report\n**Date: March 3, 2026 | Current Price: $182.48 | Pre-Market: $177.23**\n**Analyst: Senior Investment Analyst | Review Cycle: Multi-Round Adversarial Debate**\n\n---\n\n> *This report incorporates three rounds of fundamental, technical, and sentiment analysis, followed by a two-round adversarial debate. Price targets and ratings reflect post-debate revisions, including material concessions on DCF methodology, WACC inputs, and valuation benchmarking. Intellectual honesty takes precedence over thesis consistency.*\n\n---\n\n## 1. EXECUTIVE SUMMARY\n\nNVIDIA remains the dominant infrastructure provider of the AI supercycle, generating $215.94B in FY2026 revenue at a 55.6% net margin — a profitability profile with no historical precedent in semiconductor industry history. However, following rigorous adversarial scrutiny, our probability-weighted DCF analysis — corrected for an inappropriately low WACC and circular target construction — converges on a 12-month intrinsic value of approximately **$185**, representing only modest upside from current prices and insufficient to justify aggressive accumulation at this level. The investment rating is revised to **HOLD**, with a clearly defined accumulation zone of **$165–$175** that would restore a compelling risk/reward profile.\n\n---\n\n## 2. FINAL INVESTMENT RATING\n\n```\n╔══════════════════════════════════════════════════════╗\n║                                                      ║\n║   FINAL RATING:  ◆ HOLD  ◆                          ║\n║                                                      ║\n║   (Revised from BUY — post-debate recalibration)    ║\n║   Conviction Level: MEDIUM                          ║\n║   Fundamental Conviction: HIGH                      ║\n║   Valuation/Timing Conviction: LOW                  ║\n║                                                      ║\n╚══════════════════════════════════════════════════════╝\n```\n\n**Rationale for Downgrade from BUY:**\nThe adversarial debate process surfaced three material analytical errors in the prior BUY thesis: (1) circular price target construction embedding a discredited anchor estimate; (2) an indefensibly low WACC of 9.5% for a 1.70-beta semiconductor name that should be discounted at 10.5–11.0%; and (3) the omission of Taiwan Strait geopolitical risk — arguably the single largest non-fundamental tail risk specific to NVDA's supply chain. Correcting these inputs reduces the probability-weighted intrinsic value from $238 → $206 → **~$185**. At $182.48, the margin of safety is insufficient for a BUY conviction. The AI thesis remains structurally intact; the rating change reflects price, not fundamentals.\n\n---\n\n## 3. 12-MONTH PRICE TARGET\n\n### Probability-Weighted DCF Framework\n*(Replacing prior blended methodology; circular anchor estimates removed entirely)*\n\n| Scenario | Key Assumptions | DCF Output | Probability | Weighted Value |\n|---|---|---|---|---|\n| 🐻 **Bear** | WACC 10.5%, TGR 2.5%; revenue decelerates to 12% by FY2028; hyperscaler CapEx cuts; export controls tighten | **$148** | 25% | $37.00 |\n| ⚖️ **Base** | WACC 10.5%, TGR 3.5%; FY2027 revenue ~$270B (+25%); moderate multiple compression | **$185** | 50% | $92.50 |\n| 🐂 **Bull** | WACC 9.5%, TGR 4.5%; Blackwell/Rubin cycle sustains >20% growth through FY2029; defense AI re-rating | **$247** | 25% | $61.75 |\n| **Probability-Weighted Target** | | | **100%** | **$191.25** |\n\n> *Rounding and scenario weighting adjustments applied. Target range presented below reflects scenario endpoints, not point estimates.*\n\n### Summary Price Target Table\n\n```\n┌─────────────────────────────────────────────────────────────┐\n│  12-Month Price Target Summary                              │\n├──────────────┬──────────────┬──────────────┬───────────────┤\n│              │  BEAR CASE   │  BASE CASE   │  BULL CASE    │\n├──────────────┼──────────────┼──────────────┼───────────────┤\n│  Price Target│    $148      │    $185      │    $247       │\n│  vs. Current │   -18.9%     │    +1.4%     │   +35.4%      │\n│  Probability │    25%       │    50%       │    25%        │\n│  Key Driver  │ Demand cliff │ Normalization│ Rubin cycle   │\n│              │ + MA200 break│ + hold       │ + re-rating   │\n└──────────────┴──────────────┴──────────────┴───────────────┘\n  Current Price: $182.48 | Pre-Market: $177.23\n  Probability-Weighted Target: ~$191\n```\n\n**Interpretation:** The base case implies near-flat returns from current price. The bull/bear cases are genuinely asymmetric — the upside is larger (+35%) than the downside (-19%) in dollar terms, which is why this is a HOLD rather than a SELL. However, investors with dry powder are better served waiting for the $165–$175 accumulation zone, where the probability-weighted return profile becomes meaningfully positive.\n\n---\n\n## 4. INVESTMENT THESIS\n\n### 4.1 The Structural Case Remains Intact (Fundamental — HIGH Conviction)\n\nNVIDIA's competitive position is, to use a precise term, *category-defining*. The company has achieved something that does not occur in semiconductor cycles: **durable pricing power at hyperscale**. The evidence is in the margin structure.\n\n- **Revenue trajectory:** $26.97B (FY2023) → $130.50B (FY2025) → $215.94B (FY2026). This is not cyclical upside — it is structural infrastructure demand driven by the single largest capital reallocation in technology history.\n- **Net margin of 55.6%** on $215.94B in revenue generates approximately $120B in net income. For reference, this exceeds the *total revenue* of most Fortune 100 companies. No semiconductor company has sustained margins in this range at this scale.\n- **CUDA software moat:** $18.5B in annual R&D deepens an ecosystem that competitor custom silicon (Google TPUs, Amazon Trainium, Microsoft Maia) cannot replicate on a relevant timeline. Switching costs are embedded in developer workflows, libraries, and toolchains accumulated over 15+ years.\n- **Forward P/E of 22.1x** — while not the \"undervalued vs. sector\" bargain originally claimed — remains reasonable relative to the earnings growth trajectory when measured on a corrected PEG basis (~0.80x on 27.5% FY2027 consensus growth).\n- **$102.7B operating cash flow** (true FCF estimated $85–95B after R&D and committed TSMC capacity) funds both the next product cycle and a capital return program without requiring external financing.\n\n### 4.2 The Blackwell → Rubin Architecture Bridge (Catalyst — MEDIUM Conviction)\n\nThe Blackwell architecture is in early deployment. Enterprise and sovereign AI customers are just beginning multi-year infrastructure buildouts. The H100 → H200 → B100/B200 upgrade cycle has demonstrated consistent willingness-to-pay among hyperscalers, and Rubin (anticipated H2 2026) represents the next architectural leap. Unlike traditional semiconductor cycles where product obsolescence compresses margins, NVIDIA's architecture transitions have historically *expanded* ASPs and margins by delivering step-function performance improvements that justify premium pricing. This product cycle bridge reduces the demand-cliff risk in the immediate term.\n\n### 4.3 Revenue Diversification Reducing Concentration Risk (Developing Thesis — LOW Conviction)\n\nThe $2B Lockheed Martin defense partnership signals intentional customer diversification into a high-margin, geopolitically insulated vertical. Defense AI procurement\n\n---\n\n## Risk Assessment (Critic's Final Verdict)\n# Final Risk Assessment: NVDA\n**Devil's Advocate | Post-Debate Summary | March 3, 2026**\n\n---\n\n## Unresolved Risks\n1. **Hyperscaler CapEx Concentration**: The Analyst never fully resolved the binary risk — if 3-4 customers represent 40%+ of revenue and even one pivots to custom silicon, the revenue miss is non-linear, not gradual.\n2. **TSMC Dependency**: Conceded but not mitigated. No credible hedge against CoWoS capacity constraints or geopolitical disruption exists in the thesis.\n3. **DCF Assumptions**: Disclosed late, never independently stress-tested. Terminal growth rate remains optimistic given competitive entry (AMD MI400, custom TPUs).\n4. **Pre-Market Deterioration**: $177.23 pre-market versus $182.48 thesis price suggests real-time technical breakdown the Analyst acknowledged but didn't reprice around.\n\n---\n\n## Conceded Points\n- Revised target ($238 → $206) reflects intellectual honesty and improves credibility\n- CUDA moat is **genuine and durable** — switching costs are real\n- Data center demand cycle, while concentrated, is structurally multi-year\n- FCF correction was appropriate and strengthens balance sheet analysis\n\n---\n\n## Risk Rating: **HIGH**\n\n---\n\n## Key Downside Scenario\nOne major hyperscaler (Microsoft or Google) publicly accelerates in-house silicon deployment in H2 2026, triggering a 15-20% revenue guidance cut. Combined with P/E multiple compression from 26x → 20x, this produces a **$130-140 price target** — a 25-30% drawdown from current levels.\n\n---\n\n## Recommendation Override\n**YES — Downgrade to HOLD.**\n\nThe Analyst's revised $206 target offers insufficient margin of safety (13% upside) against a credible 25-30% downside scenario. Risk/reward is asymmetric in the **wrong direction**. A HOLD rating with a re-entry trigger at $160-165 is more defensible.\n\n*Conviction requires margin of safety. This thesis currently lacks it.*",
+  "financial_statements": {
+    "income_statement": {
+      "revenue": [
+        {
+          "year": "2026",
+          "value_usd": 215940000000,
+          "formatted": "$215.94B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 130500000000,
+          "formatted": "$130.50B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 60920000000,
+          "formatted": "$60.92B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 26970000000,
+          "formatted": "$26.97B"
+        }
+      ],
+      "gross_profit": [
+        {
+          "year": "2026",
+          "value_usd": 153460000000,
+          "formatted": "$153.46B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 97860000000,
+          "formatted": "$97.86B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 44300000000,
+          "formatted": "$44.30B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 15360000000,
+          "formatted": "$15.36B"
+        }
+      ],
+      "operating_income": [
+        {
+          "year": "2026",
+          "value_usd": 130390000000,
+          "formatted": "$130.39B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 81450000000,
+          "formatted": "$81.45B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 32970000000,
+          "formatted": "$32.97B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 4220000000,
+          "formatted": "$4.22B"
+        }
+      ],
+      "net_income": [
+        {
+          "year": "2026",
+          "value_usd": 120070000000,
+          "formatted": "$120.07B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 72880000000,
+          "formatted": "$72.88B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 29760000000,
+          "formatted": "$29.76B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 4370000000,
+          "formatted": "$4.37B"
+        }
+      ],
+      "eps_basic": [
+        {
+          "year": "2026",
+          "value_usd": 5.0,
+          "formatted": "$5.00"
+        },
+        {
+          "year": "2025",
+          "value_usd": 3.0,
+          "formatted": "$3.00"
+        },
+        {
+          "year": "2024",
+          "value_usd": 12.0,
+          "formatted": "$12.00"
+        },
+        {
+          "year": "2023",
+          "value_usd": 2.0,
+          "formatted": "$2.00"
+        }
+      ],
+      "eps_diluted": [
+        {
+          "year": "2026",
+          "value_usd": 5.0,
+          "formatted": "$5.00"
+        },
+        {
+          "year": "2025",
+          "value_usd": 3.0,
+          "formatted": "$3.00"
+        },
+        {
+          "year": "2024",
+          "value_usd": 12.0,
+          "formatted": "$12.00"
+        },
+        {
+          "year": "2023",
+          "value_usd": 2.0,
+          "formatted": "$2.00"
+        }
+      ],
+      "rd_expense": [
+        {
+          "year": "2026",
+          "value_usd": 18500000000,
+          "formatted": "$18.50B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 12910000000,
+          "formatted": "$12.91B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 8680000000,
+          "formatted": "$8.68B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 7340000000,
+          "formatted": "$7.34B"
+        }
+      ],
+      "sga_expense": [
+        {
+          "year": "2026",
+          "value_usd": 4580000000,
+          "formatted": "$4.58B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 3490000000,
+          "formatted": "$3.49B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 2650000000,
+          "formatted": "$2.65B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 2440000000,
+          "formatted": "$2.44B"
+        }
+      ],
+      "interest_expense": [
+        {
+          "year": "2024",
+          "value_usd": 257000000,
+          "formatted": "$257.0M"
+        },
+        {
+          "year": "2023",
+          "value_usd": 262000000,
+          "formatted": "$262.0M"
+        }
+      ],
+      "income_tax": [
+        {
+          "year": "2026",
+          "value_usd": 21380000000,
+          "formatted": "$21.38B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 11150000000,
+          "formatted": "$11.15B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 4060000000,
+          "formatted": "$4.06B"
+        },
+        {
+          "year": "2023",
+          "value_usd": -187000000,
+          "formatted": "-$187.0M"
+        }
+      ],
+      "revenue_growth_yoy": [
+        {
+          "year": "2026",
+          "value_usd": 65.4735357900948,
+          "formatted": "65.5%"
+        },
+        {
+          "year": "2025",
+          "value_usd": 114.20340763599357,
+          "formatted": "114.2%"
+        },
+        {
+          "year": "2024",
+          "value_usd": 125.85452658115221,
+          "formatted": "125.9%"
+        }
+      ],
+      "gross_margin_pct": [
+        {
+          "year": "2026",
+          "value_usd": 71.06808435754708,
+          "formatted": "71.1%"
+        },
+        {
+          "year": "2025",
+          "value_usd": 74.98869705816992,
+          "formatted": "75.0%"
+        },
+        {
+          "year": "2024",
+          "value_usd": 72.71757329043696,
+          "formatted": "72.7%"
+        },
+        {
+          "year": "2023",
+          "value_usd": 56.928894490991325,
+          "formatted": "56.9%"
+        }
+      ],
+      "operating_margin_pct": [
+        {
+          "year": "2026",
+          "value_usd": 60.38168363141272,
+          "formatted": "60.4%"
+        },
+        {
+          "year": "2025",
+          "value_usd": 62.417526839697466,
+          "formatted": "62.4%"
+        },
+        {
+          "year": "2024",
+          "value_usd": 54.121663766783755,
+          "formatted": "54.1%"
+        },
+        {
+          "year": "2023",
+          "value_usd": 15.65952398606065,
+          "formatted": "15.7%"
+        }
+      ],
+      "net_margin_pct": [
+        {
+          "year": "2026",
+          "value_usd": 55.60253406070261,
+          "formatted": "55.6%"
+        },
+        {
+          "year": "2025",
+          "value_usd": 55.848027157712444,
+          "formatted": "55.8%"
+        },
+        {
+          "year": "2024",
+          "value_usd": 48.84934834706674,
+          "formatted": "48.8%"
+        },
+        {
+          "year": "2023",
+          "value_usd": 16.193371394676355,
+          "formatted": "16.2%"
+        }
+      ],
+      "rd_as_pct_revenue": [
+        {
+          "year": "2026",
+          "value_usd": 8.565884652076058,
+          "formatted": "8.6%"
+        },
+        {
+          "year": "2025",
+          "value_usd": 9.896012935163261,
+          "formatted": "9.9%"
+        },
+        {
+          "year": "2024",
+          "value_usd": 14.239519385443684,
+          "formatted": "14.2%"
+        },
+        {
+          "year": "2023",
+          "value_usd": 27.20768147104619,
+          "formatted": "27.2%"
+        }
+      ]
+    },
+    "balance_sheet": {
+      "total_assets": [
+        {
+          "year": "2026",
+          "value_usd": 206800000000,
+          "formatted": "$206.80B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 111600000000,
+          "formatted": "$111.60B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 65730000000,
+          "formatted": "$65.73B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 41180000000,
+          "formatted": "$41.18B"
+        }
+      ],
+      "current_assets": [
+        {
+          "year": "2026",
+          "value_usd": 125610000000,
+          "formatted": "$125.61B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 80130000000,
+          "formatted": "$80.13B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 44340000000,
+          "formatted": "$44.34B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 23070000000,
+          "formatted": "$23.07B"
+        }
+      ],
+      "cash_and_equivalents": [
+        {
+          "year": "2026",
+          "value_usd": 10610000000,
+          "formatted": "$10.61B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 8590000000,
+          "formatted": "$8.59B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 7280000000,
+          "formatted": "$7.28B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 3390000000,
+          "formatted": "$3.39B"
+        }
+      ],
+      "goodwill": [
+        {
+          "year": "2026",
+          "value_usd": 20830000000,
+          "formatted": "$20.83B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 5190000000,
+          "formatted": "$5.19B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 4430000000,
+          "formatted": "$4.43B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 4370000000,
+          "formatted": "$4.37B"
+        }
+      ],
+      "total_liabilities": [
+        {
+          "year": "2026",
+          "value_usd": 49510000000,
+          "formatted": "$49.51B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 32270000000,
+          "formatted": "$32.27B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 22750000000,
+          "formatted": "$22.75B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 19080000000,
+          "formatted": "$19.08B"
+        }
+      ],
+      "current_liabilities": [
+        {
+          "year": "2026",
+          "value_usd": 32160000000,
+          "formatted": "$32.16B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 18050000000,
+          "formatted": "$18.05B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 10630000000,
+          "formatted": "$10.63B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 6560000000,
+          "formatted": "$6.56B"
+        }
+      ],
+      "long_term_debt": [
+        {
+          "year": "2026",
+          "value_usd": 8470000000,
+          "formatted": "$8.47B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 8460000000,
+          "formatted": "$8.46B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 9710000000,
+          "formatted": "$9.71B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 10950000000,
+          "formatted": "$10.95B"
+        }
+      ],
+      "shareholders_equity": [
+        {
+          "year": "2026",
+          "value_usd": 157290000000,
+          "formatted": "$157.29B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 79330000000,
+          "formatted": "$79.33B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 42980000000,
+          "formatted": "$42.98B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 22100000000,
+          "formatted": "$22.10B"
+        }
+      ],
+      "retained_earnings": [
+        {
+          "year": "2026",
+          "value_usd": 146970000000,
+          "formatted": "$146.97B"
+        },
+        {
+          "year": "2025",
+          "value_usd": 68040000000,
+          "formatted": "$68.04B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 29820000000,
+          "formatted": "$29.82B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 10170000000,
+          "formatted": "$10.17B"
+        }
+      ],
+      "debt_to_equity": [
+        {
+          "year": "2026",
+          "value_usd": 0.05383583503398117,
+          "formatted": "0.05×"
+        },
+        {
+          "year": "2025",
+          "value_usd": 0.10668498745698186,
+          "formatted": "0.11×"
+        },
+        {
+          "year": "2024",
+          "value_usd": 0.22590627763041557,
+          "formatted": "0.23×"
+        },
+        {
+          "year": "2023",
+          "value_usd": 0.4955884349124474,
+          "formatted": "0.50×"
+        }
+      ],
+      "roe_pct": [
+        {
+          "year": "2026",
+          "value_usd": 76.33333969089534,
+          "formatted": "76.3%"
+        },
+        {
+          "year": "2025",
+          "value_usd": 91.87288060811576,
+          "formatted": "91.9%"
+        },
+        {
+          "year": "2024",
+          "value_usd": 69.24472986178975,
+          "formatted": "69.2%"
+        },
+        {
+          "year": "2023",
+          "value_usd": 19.763811592235644,
+          "formatted": "19.8%"
+        }
+      ],
+      "roa_pct": [
+        {
+          "year": "2026",
+          "value_usd": 58.05863551302447,
+          "formatted": "58.1%"
+        },
+        {
+          "year": "2025",
+          "value_usd": 65.30407433625147,
+          "formatted": "65.3%"
+        },
+        {
+          "year": "2024",
+          "value_usd": 45.277507302823764,
+          "formatted": "45.3%"
+        },
+        {
+          "year": "2023",
+          "value_usd": 10.606575688407558,
+          "formatted": "10.6%"
+        }
+      ],
+      "current_ratio": [
+        {
+          "year": "2026",
+          "value_usd": 3.905263812455306,
+          "formatted": "3.91×"
+        },
+        {
+          "year": "2025",
+          "value_usd": 4.439851498864077,
+          "formatted": "4.44×"
+        },
+        {
+          "year": "2024",
+          "value_usd": 4.171291505973097,
+          "formatted": "4.17×"
+        },
+        {
+          "year": "2023",
+          "value_usd": 3.515617857687033,
+          "formatted": "3.52×"
+        }
+      ]
+    },
+    "ticker": "NVDA",
+    "fiscal_year": 2025,
+    "currency": "USD",
+    "data_source": "SEC EDGAR XBRL"
+  },
+  "debate_rounds": 2,
+  "model_provider": "bedrock",
+  "record_id": "e15cea2e"
+}
