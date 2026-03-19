@@ -1,6 +1,6 @@
 [English](./README.md) | 中文
 
-# FinAgent — 多智能體股價預測與基本面分析系統
+# FinAgent — 股價預測與基本面分析系統
 
 > 基於 LangGraph 的 Multi-Agent 投資分析框架，整合 SEC EDGAR RAG、yfinance 技術分析與即時股價/新聞、DCF 估值模型、同業競爭對比、對抗式辯論機制與跨會話記憶，透過 AWS Bedrock 或 Anthropic API 驅動 Claude 模型，提供 **CLI** 與 **Vue 3 Web UI** 雙介面，並以 LangSmith 全程追蹤 Agent 推理過程。
 
