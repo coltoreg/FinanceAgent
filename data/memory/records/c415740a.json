@@ -1,0 +1,540 @@
+{
+  "ticker": "AAPL",
+  "year": 2025,
+  "timestamp": "2026-03-20T01:05:17.216324+00:00",
+  "depth": "detailed",
+  "investment_rating": "HOLD",
+  "fundamental_score": "UNKNOWN",
+  "analyst_thesis": "# AAPL Investment Thesis — Senior Analyst Assessment\n**Date: March 2025 | Current Price: $248.96 | Prior Coverage Price: $264.72**\n\n---\n\n## 1. Investment Rating: **HOLD**\n\n*Downgrade from prior BUY rating. The risk-reward at current levels is balanced but tilted slightly negative by technical deterioration and persistent valuation stretch.*\n\n---\n\n## 2. 12-Month Price Target: **$272** (+9.2% from $248.96)\n\n**Fair Value Range: $245–$295**\n\n- **Bear Scenario (20% probability):** $205 — multiple compression to 28× forward earnings amid AI disappointment or China re-escalation\n- **Base Scenario (55% probability):** $272 — modest re-rating on Services acceleration and AI optionality; ~30× normalized forward earnings on ~$9.00 EPS\n- **Bull Scenario (25% probability):** $310 — AI-driven hardware supercycle inflects, Services margins breach 40%, buybacks accelerate share count reduction materially\n\nAt +9.2% implied upside, this falls just below the BUY threshold of 10%. With near-term technical headwinds acting as a meaningful drag on short-horizon returns, HOLD is the appropriate rating.\n\n---\n\n## 3. Bull Case\n\n**Bull Case #1 — Services Monetization Driving Structural Margin Expansion**\nApple's gross profit accelerated +$14.5B YoY to $195.2B in FY2025 (+8.0%), while net income surged 19.5% to $112.0B — the strongest print in four years. The Services segment, carrying estimated 70%+ gross margins versus ~37% for Products, is increasingly the engine of this expansion. If Services revenue compounds at 15–18% annually over the next three years — consistent with recent trajectory — blended gross margins could approach 48–50%, adding $8–12B in additional annual net income without requiring hardware unit growth. This creates a durable earnings compounder narrative that justifies above-market multiples.\n\n**Bull Case #2 — China Recovery + AI Hardware Cycle Creates Dual Revenue Inflection**\nThe 23% China sales recovery reported in March 2026 headlines is materially significant. China represents approximately 17–19% of Apple's total revenue, and a sustained recovery from the trough meaningfully changes the FY2026 revenue setup. Layered atop this, if Apple Intelligence features drive an iPhone 17/18 upgrade supercycle — particularly among the estimated 350M+ iPhones currently aged 4+ years — unit volumes could inflect simultaneously. The combination of geographic recovery and product cycle acceleration is the scenario where the bull case $310 target becomes achievable within 12 months.\n\n---\n\n## 4. Bear Case\n\n**Bear Case #1 — Valuation Offers No Margin of Safety; Multiple Compression Risk is Real**\nAt 35.6× trailing P/E, 27.5× EV/EBITDA, and 13.8× P/S — all carrying 25–84% premiums to sector averages — AAPL is priced for flawless execution. Even a modest de-rating toward 28× P/E on current earnings implies a stock price of approximately **$175–$195**, representing 21–30% downside. The normalized DCF range of $140–$180 per share underscores that the current price embeds enormous optionality premium. In a higher-for-longer rate environment where long-duration equity risk premiums are being re-priced, this premium is structurally vulnerable. The market need not hate Apple for the stock to underperform — it simply needs to stop loving it at 35× earnings.\n\n**Bear Case #2 — Technical Structure is Deteriorating; MA200 Defense is Fragile**\nAAPL is trading at $248.96 — just **$2.74 above its 200-day moving average** of $246.22. MACD sits at -3.86 with a widening negative histogram, RSI at 35.8 has not yet confirmed capitulation, and volume at 0.65× average suggests institutional conviction is absent on both sides. A confirmed daily close below $246 would trigger technical selling algorithms and likely invite a flush toward the $220–$230 zone, where the next meaningful support cluster exists. The death cross formation risk (MA50 at $261.27 converging toward MA200 at $246.22) over the next 4–8 weeks adds a reflexive technical overhang that could amplify any fundamental disappointment.\n\n---\n\n## 5. Key Catalysts\n\n| Catalyst | Timeframe | Bull/Bear | Magnitude |\n|---|---|---|---|\n| **Q2 FY2026 Earnings** (est. April/May 2026) | 4–8 weeks | Dual | HIGH — Services growth rate and iPhone unit guidance will set direction |\n| **WWDC 2026 AI Feature Reveal** | June 2026 | Bull | MEDIUM — Apple Intelligence monetization roadmap clarity |\n| **China Macro Trajectory** | Ongoing | Dual | MEDIUM-HIGH — 23% recovery must sustain; trade policy risk persists |\n| **MA200 ($246.22) Hold/Break** | 1–3 weeks | Bear trigger | HIGH — Technical line in the sand; breach invites algorithmic selling |\n| **Buyback Acceleration Announcement** | Earnings call | Bull | MEDIUM — Any increase above the $110B authorized program would support EPS |\n| **Fed Rate Policy Pivot** | 6–9 months | Bull | MEDIUM — Duration re-rating would disproportionately benefit mega-cap growth |\n\n---\n\n## 6. Valuation Assessment\n\n**Verdict: EXPENSIVE — Premium Partially Justified, Margin of Safety Absent**\n\nApple's valuation is not irrational, but it demands precision to defend. The quality moat is genuine: $98.8B in implied free cash flow, $19.4B in debt reduction over three years, and a capital return program that systematically reduces share count provide real fundamental underpinning. These characteristics justify trading above the sector median.\n\nHowever, the math at current prices is unforgiving. The trailing P/E of 35.6× compares to Apple's own 10-year median of approximately 22–24×, meaning the stock is carrying a **40–50% self-premium relative to historical norms**. On",
+  "final_report": "# APPLE INC. (AAPL) — FINAL INVESTMENT REPORT\n**Senior Investment Analysis | March 2025 | Initiated Coverage Review**\n\n---\n\n> ⚠️ **Data Integrity Disclosure:** A revenue database mismatch produced an erroneous $265.6B FY2025 revenue figure (matching Apple's FY2018 actuals). All financial estimates below are anchored to consensus-based approximations (~$400–410B revenue, ~$175–185B gross profit, ~$95–105B FCF) and explicitly flagged as estimates, not confirmed SEC-verified figures. Price targets and scenario analysis have been revised accordingly. Readers should independently verify fundamental figures against Apple's most recent 10-K filing before acting.\n\n---\n\n## 1. Executive Summary\n\nApple trades at $248.96 against a revised fundamental fair value range of **$230–$258 (midpoint: $244)**, implying the stock is approximately at fair value with asymmetric downside risk skewed roughly **2:1 unfavorable** at current prices. Technical structure remains bearish near-term, with the stock sitting just $2.74 above its 200-day moving average ($246.22) amid deteriorating momentum indicators and absent institutional conviction. While the long-term franchise is unimpeachable, the risk-reward at current valuation does not reward new capital deployment, and multiple compression alone — requiring no fundamental deterioration — could drive **-12% to -18% downside** toward the 25–27× forward P/E range Apple has historically commanded.\n\n---\n\n## 2. Final Investment Rating\n\n```\n╔══════════════════════════════════════════════╗\n║         RATING:  H O L D                    ║\n║         (Downgrade from prior BUY)          ║\n║                                             ║\n║  Current Price:     $248.96                 ║\n║  12-Month Target:   $244  (base case)       ║\n║  Fair Value Range:  $230 – $258             ║\n║  Implied Return:    -2.0% (base)            ║\n╚══════════════════════════════════════════════╝\n```\n\n**Rationale for HOLD (not SELL):** Despite unfavorable near-term risk-reward, Apple's franchise durability, capital return consistency, ecosystem moat, and genuine AI optionality prevent a more negative rating. The floor multiple — even in a risk-off environment — is defensible at 24–25×, limiting catastrophic downside probability. This is a **quality stock at a full price**, not a structurally impaired business.\n\n---\n\n## 3. 12-Month Price Target & Scenario Analysis\n\n### Price Target: **$244** (Base Case) | Range: $195 – $310\n\n| Scenario | Probability | Price Target | Key Assumptions | Return from $249 |\n|---|---|---|---|---|\n| 🐻 **Bear** | 25% | **$195** | Multiple compresses to 24×; FCF miss of 12–15%; China deteriorates; AI fails to inflect | **-21.7%** |\n| ⚖️ **Base** | 55% | **$244** | Multiple stabilizes at 27–28×; EPS of $8.10–$8.35; Services grows 13–15% YoY; China recovery sustains | **-2.0%** |\n| 🐂 **Bull** | 20% | **$310** | Multiple re-rates to 32–33×; AI-driven upgrade supercycle inflects; Services breach 40% margin; buybacks accelerate | **+24.5%** |\n\n**Probability-weighted 12-month expected value: ~$238** (-4.4% from current price)\n\n> **Methodological Note:** The base case EPS of $8.10–$8.35 is built bottom-up from a ~$7.27 trailing EPS estimate, incorporating: Services revenue growth at 15% YoY (+$0.40 EPS), share count reduction at 1.5% annually (+$0.12 EPS), hardware recovery in China and upgrade cycle (+$0.25 EPS), and operating leverage on fixed cost base (+$0.12 EPS). This produces forward EPS of approximately $8.16, applied at a 27–30× multiple range. The $9.00 EPS anchor from prior analysis is withdrawn as insufficiently evidenced.\n\n---\n\n## 4. Investment Thesis\n\n### 4a. Supporting Arguments — Why HOLD, Not SELL\n\n**Pillar I — Services Segment as a Structural Margin Engine (HIGH CONVICTION)**\n\nApple's business mix is undergoing a durable shift toward software-defined revenue. Services — estimated at ~25% of revenue but carrying gross margins approximately 30–35 percentage points above the hardware segment — is mechanically expanding blended margins each year that its mix share grows. Even without heroic growth assumptions, a Services segment compounding at 13–15% annually adds $0.35–0.45 to EPS per year through pure margin mix improvement, independent of iPhone unit volumes. This is not speculation; it is arithmetic flowing from a revenue composition that is visibly shifting in public disclosures. The net income surge of approximately 19% YoY (estimated FY2025) reflects this dynamic already in motion.\n\n**Pillar II — Capital Return Program Provides EPS Floor (MODERATE-HIGH CONVICTION)**\n\nApple has authorized approximately $110B in share repurchases and returns capital at a pace exceeding $100B annually. At current buyback rates, share count declines approximately 1.5% per year, mechanically lifting EPS by $0.11–0.13 annually even with zero fundamental growth. This creates a *structural EPS floor* that limits downside scenarios where the business stagnates but doesn't contract. The critical caveat — flagged explicitly by the adversarial debate — is that buyback pace slightly exceeds FCF, requiring modest net debt issuance. If FCF disappoints by 10–15%, buyback pace must moderate, reducing this EPS floor contribution by approximately half.\n\n**Pillar III — China Recovery + AI Hardware Cycle Represent Real, Unpriced Optionality (MODERATE CONVICTION)**\n\nThe 23% China sales recovery reported in early 2025 sentiment data is material: China represents approximately 17–19% of Apple's total revenue, and stabilization after a prolonged downturn changes the FY2026 revenue setup meaningfully. Simultaneously, the installed base of 350M+ iPhones aged 4+ years creates a structural upgrade coil. If Apple Intelligence features embedded in the iPhone 17/18 cycle provide genuine consumer utility — a condition that is uncertain but not implausible — the combination of geographic recovery and product cycle inflection is the scenario in which the bull case $310 target is achievable. This optionality is not in the base case, but it is not priced as zero either: it is part of the approximately **$1.07 trillion premium** the market assigns above normalized DCF fair value ($140–$180).\n\n### 4b. Why NOT BUY — The Valuation Constraint\n\nThe adversarial debate produced an analytically decisive conclusion: at $248.96, the stock's **probability-weighted expected return is negative** over 12 months using the analyst's own revised estimates. Three compounding valuation concerns make new capital deployment inadvisable:\n\n1. **Self-premium at 40–50% above historical norms:** AAPL trades at ~30× forward P/E versus its own 10-year median of 22–24×. This premium is partially earned by the Services transition, but requires flawless execution of outcomes not yet in the revenue run rate.\n\n2. **Multiple compression risk is the base case, not a tail risk:** Compression from 30× to 25× forward P/E — still a generous premium to the market — on $8.18 EPS implies $205, representing **-17.7% downside with no fundamental deterioration.** In a sustained higher-for-longer rate environment, long-duration equity premiums face structural headwinds.\n\n3. **The DCF gap is uncomfortably large:** Normalized DCF fair value of $140–$180 implies approximately $1.07 trillion of market cap attributed to optionality. This is not inherently wrong — Apple's brand and ecosystem lock-in justify above-normalized multiples — but the magnitude demands that the optionality scenarios materialize, not merely remain possible.\n\n---\n\n## 5. Risk Factors\n\n### Risk 1 — Multiple Compression in a Higher-For-Longer Rate Environment\n\n---\n\n## Risk Assessment (Critic's Final Verdict)\n# Final Risk Assessment — AAPL\n**Devil's Advocate | March 2025 | Post-Debate Summary**\n\n---\n\n## 1. Unresolved Risks\n\n- **China revenue concentration** (~19% of sales) remains inadequately stress-tested; tariff escalation and Huawei's domestic resurgence pose asymmetric downside the Analyst acknowledged but never quantified\n- **AI monetization timeline** is speculative — Apple Intelligence has no confirmed revenue model, and the Analyst's bull case depends heavily on an unproven upgrade supercycle\n- **Valuation floor is untested** — at 28-30x forward earnings, a multiple compression to historical norms (21-23x) alone produces ~$195-210 price target, a scenario the Analyst never fully refuted\n\n---\n\n## 2. Conceded Points\n\n- Services margin durability and ecosystem lock-in are **genuine structural moats** — the Critic acknowledges these are not fairy tales\n- The Analyst's **self-correction** on DCF dismissal and EPS anchoring was intellectually honest and materially improved thesis credibility\n- Revised fair value range of **$230–$258** is defensible under base-case assumptions\n\n---\n\n## 3. Risk Rating: **HIGH**\n\n---\n\n## 4. Key Downside Scenario\n\nChina revenue deteriorates 15-20% on regulatory retaliation + tariffs. AI upgrade cycle disappoints in FY2026. Multiple compresses from 29x to 23x on growth deceleration. **Price target: $185-200. Probability: 25-30%.**\n\n---\n\n## 5. Recommendation Override: **YES**\n\n**HOLD → REDUCE**\n\nThe Analyst's own revised math — $244 midpoint fair value against a $248.96 current price — implies **negative risk-adjusted returns** when accounting for China tail risk and multiple compression. A HOLD rating on a stock trading above its central fair value estimate, with identifiable 25%+ downside scenarios, is intellectually inconsistent.\n\n**Reduce on strength. Re-enter below $225.**",
+  "financial_statements": {
+    "income_statement": {
+      "revenue": [
+        {
+          "year": "2018",
+          "value_usd": 265600000000,
+          "formatted": "$265.60B"
+        },
+        {
+          "year": "2017",
+          "value_usd": 88290000000,
+          "formatted": "$88.29B"
+        },
+        {
+          "year": "2016",
+          "value_usd": 78350000000,
+          "formatted": "$78.35B"
+        }
+      ],
+      "gross_profit": [
+        {
+          "year": "2025",
+          "value_usd": 195200000000,
+          "formatted": "$195.20B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 180680000000,
+          "formatted": "$180.68B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 169150000000,
+          "formatted": "$169.15B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 170780000000,
+          "formatted": "$170.78B"
+        }
+      ],
+      "operating_income": [
+        {
+          "year": "2025",
+          "value_usd": 133050000000,
+          "formatted": "$133.05B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 123220000000,
+          "formatted": "$123.22B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 114300000000,
+          "formatted": "$114.30B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 119440000000,
+          "formatted": "$119.44B"
+        }
+      ],
+      "net_income": [
+        {
+          "year": "2025",
+          "value_usd": 112010000000,
+          "formatted": "$112.01B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 93740000000,
+          "formatted": "$93.74B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 97000000000,
+          "formatted": "$97.00B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 99800000000,
+          "formatted": "$99.80B"
+        }
+      ],
+      "eps_basic": [
+        {
+          "year": "2025",
+          "value_usd": 7,
+          "formatted": "$7.00"
+        },
+        {
+          "year": "2024",
+          "value_usd": 6,
+          "formatted": "$6.00"
+        },
+        {
+          "year": "2023",
+          "value_usd": 6,
+          "formatted": "$6.00"
+        },
+        {
+          "year": "2022",
+          "value_usd": 6,
+          "formatted": "$6.00"
+        }
+      ],
+      "eps_diluted": [
+        {
+          "year": "2025",
+          "value_usd": 7,
+          "formatted": "$7.00"
+        },
+        {
+          "year": "2024",
+          "value_usd": 6,
+          "formatted": "$6.00"
+        },
+        {
+          "year": "2023",
+          "value_usd": 6,
+          "formatted": "$6.00"
+        },
+        {
+          "year": "2022",
+          "value_usd": 6,
+          "formatted": "$6.00"
+        }
+      ],
+      "rd_expense": [
+        {
+          "year": "2025",
+          "value_usd": 34550000000,
+          "formatted": "$34.55B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 31370000000,
+          "formatted": "$31.37B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 29910000000,
+          "formatted": "$29.91B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 26250000000,
+          "formatted": "$26.25B"
+        }
+      ],
+      "sga_expense": [
+        {
+          "year": "2025",
+          "value_usd": 27600000000,
+          "formatted": "$27.60B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 26100000000,
+          "formatted": "$26.10B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 24930000000,
+          "formatted": "$24.93B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 25090000000,
+          "formatted": "$25.09B"
+        }
+      ],
+      "interest_expense": [
+        {
+          "year": "2023",
+          "value_usd": 3930000000,
+          "formatted": "$3.93B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 2930000000,
+          "formatted": "$2.93B"
+        },
+        {
+          "year": "2021",
+          "value_usd": 2650000000,
+          "formatted": "$2.65B"
+        },
+        {
+          "year": "2020",
+          "value_usd": 2870000000,
+          "formatted": "$2.87B"
+        }
+      ],
+      "income_tax": [
+        {
+          "year": "2025",
+          "value_usd": 20720000000,
+          "formatted": "$20.72B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 29750000000,
+          "formatted": "$29.75B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 16740000000,
+          "formatted": "$16.74B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 19300000000,
+          "formatted": "$19.30B"
+        }
+      ],
+      "revenue_growth_yoy": [
+        {
+          "year": "2018",
+          "value_usd": 200.81,
+          "formatted": "200.8%"
+        },
+        {
+          "year": "2017",
+          "value_usd": 12.69,
+          "formatted": "12.7%"
+        }
+      ],
+      "gross_margin_pct": [],
+      "operating_margin_pct": [],
+      "net_margin_pct": [],
+      "rd_as_pct_revenue": []
+    },
+    "balance_sheet": {
+      "total_assets": [
+        {
+          "year": "2025",
+          "value_usd": 359240000000,
+          "formatted": "$359.24B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 364980000000,
+          "formatted": "$364.98B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 352580000000,
+          "formatted": "$352.58B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 352750000000,
+          "formatted": "$352.75B"
+        }
+      ],
+      "total_liabilities": [
+        {
+          "year": "2025",
+          "value_usd": 285510000000,
+          "formatted": "$285.51B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 308030000000,
+          "formatted": "$308.03B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 290440000000,
+          "formatted": "$290.44B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 302080000000,
+          "formatted": "$302.08B"
+        }
+      ],
+      "shareholders_equity": [
+        {
+          "year": "2025",
+          "value_usd": 73730000000,
+          "formatted": "$73.73B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 56950000000,
+          "formatted": "$56.95B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 62150000000,
+          "formatted": "$62.15B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 50670000000,
+          "formatted": "$50.67B"
+        }
+      ],
+      "long_term_debt": [
+        {
+          "year": "2025",
+          "value_usd": 90680000000,
+          "formatted": "$90.68B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 96660000000,
+          "formatted": "$96.66B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 105100000000,
+          "formatted": "$105.10B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 110090000000,
+          "formatted": "$110.09B"
+        }
+      ],
+      "cash_and_equivalents": [
+        {
+          "year": "2025",
+          "value_usd": 35930000000,
+          "formatted": "$35.93B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 29940000000,
+          "formatted": "$29.94B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 29960000000,
+          "formatted": "$29.96B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 23650000000,
+          "formatted": "$23.65B"
+        }
+      ],
+      "current_assets": [
+        {
+          "year": "2025",
+          "value_usd": 147960000000,
+          "formatted": "$147.96B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 152990000000,
+          "formatted": "$152.99B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 143570000000,
+          "formatted": "$143.57B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 135410000000,
+          "formatted": "$135.41B"
+        }
+      ],
+      "current_liabilities": [
+        {
+          "year": "2025",
+          "value_usd": 165630000000,
+          "formatted": "$165.63B"
+        },
+        {
+          "year": "2024",
+          "value_usd": 176390000000,
+          "formatted": "$176.39B"
+        },
+        {
+          "year": "2023",
+          "value_usd": 145310000000,
+          "formatted": "$145.31B"
+        },
+        {
+          "year": "2022",
+          "value_usd": 153980000000,
+          "formatted": "$153.98B"
+        }
+      ],
+      "goodwill": [
+        {
+          "year": "2017",
+          "value_usd": 5720000000,
+          "formatted": "$5.72B"
+        },
+        {
+          "year": "2016",
+          "value_usd": 5410000000,
+          "formatted": "$5.41B"
+        },
+        {
+          "year": "2015",
+          "value_usd": 5120000000,
+          "formatted": "$5.12B"
+        },
+        {
+          "year": "2014",
+          "value_usd": 4620000000,
+          "formatted": "$4.62B"
+        }
+      ],
+      "retained_earnings": [
+        {
+          "year": "2025",
+          "value_usd": -14260000000,
+          "formatted": "-$14.26B"
+        },
+        {
+          "year": "2024",
+          "value_usd": -19150000000,
+          "formatted": "-$19.15B"
+        },
+        {
+          "year": "2023",
+          "value_usd": -214000000,
+          "formatted": "-$214.0M"
+        },
+        {
+          "year": "2022",
+          "value_usd": -3070000000,
+          "formatted": "-$3.07B"
+        }
+      ],
+      "debt_to_equity": [
+        {
+          "year": "2025",
+          "value_usd": 1.23,
+          "formatted": "1.23×"
+        },
+        {
+          "year": "2024",
+          "value_usd": 1.7,
+          "formatted": "1.70×"
+        },
+        {
+          "year": "2023",
+          "value_usd": 1.69,
+          "formatted": "1.69×"
+        },
+        {
+          "year": "2022",
+          "value_usd": 2.17,
+          "formatted": "2.17×"
+        }
+      ],
+      "current_ratio": [
+        {
+          "year": "2025",
+          "value_usd": 0.89,
+          "formatted": "0.89×"
+        },
+        {
+          "year": "2024",
+          "value_usd": 0.87,
+          "formatted": "0.87×"
+        },
+        {
+          "year": "2023",
+          "value_usd": 0.99,
+          "formatted": "0.99×"
+        },
+        {
+          "year": "2022",
+          "value_usd": 0.88,
+          "formatted": "0.88×"
+        }
+      ],
+      "roe_pct": [
+        {
+          "year": "2025",
+          "value_usd": 151.94,
+          "formatted": "151.9%"
+        },
+        {
+          "year": "2024",
+          "value_usd": 164.6,
+          "formatted": "164.6%"
+        },
+        {
+          "year": "2023",
+          "value_usd": 156.08,
+          "formatted": "156.1%"
+        },
+        {
+          "year": "2022",
+          "value_usd": 196.96,
+          "formatted": "197.0%"
+        }
+      ],
+      "roa_pct": [
+        {
+          "year": "2025",
+          "value_usd": 31.18,
+          "formatted": "31.2%"
+        },
+        {
+          "year": "2024",
+          "value_usd": 25.68,
+          "formatted": "25.7%"
+        },
+        {
+          "year": "2023",
+          "value_usd": 27.51,
+          "formatted": "27.5%"
+        },
+        {
+          "year": "2022",
+          "value_usd": 28.29,
+          "formatted": "28.3%"
+        }
+      ]
+    },
+    "ticker": "AAPL",
+    "fiscal_year": 2025,
+    "currency": "USD",
+    "data_source": "SEC EDGAR XBRL"
+  },
+  "debate_rounds": 2,
+  "model_provider": "bedrock",
+  "record_id": "c415740a"
+}

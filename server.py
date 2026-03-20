@@ -15,7 +15,7 @@ from typing import AsyncGenerator, Optional
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import Response, StreamingResponse
 from pydantic import BaseModel
 
 load_dotenv()
@@ -59,6 +59,10 @@ class ChatRequest(BaseModel):
     question: str
     context: dict  # full AnalysisState dict
     history: list[dict] = []
+
+
+class ExportRequest(BaseModel):
+    context: dict  # full AnalysisResult dict from the frontend
 
 
 # ─────────────────────────────────────────────
@@ -331,6 +335,46 @@ async def get_history(ticker: str, limit: int = 10) -> dict:
                 for r in records
             ],
         }
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
+
+
+@app.post("/api/export/pdf")
+async def export_pdf(req: ExportRequest) -> Response:
+    """
+    Generate and return a PDF investment report from the provided AnalysisResult.
+    """
+    try:
+        from src.tools.exporter import generate_pdf
+        ticker = req.context.get("ticker", "report").upper()
+        pdf_bytes = generate_pdf(req.context)
+        return Response(
+            content=pdf_bytes,
+            media_type="application/pdf",
+            headers={
+                "Content-Disposition": f'attachment; filename="{ticker}_analysis.pdf"',
+            },
+        )
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
+
+
+@app.post("/api/export/excel")
+async def export_excel(req: ExportRequest) -> Response:
+    """
+    Generate and return an Excel workbook from the provided AnalysisResult.
+    """
+    try:
+        from src.tools.exporter import generate_excel
+        ticker = req.context.get("ticker", "report").upper()
+        xlsx_bytes = generate_excel(req.context)
+        return Response(
+            content=xlsx_bytes,
+            media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            headers={
+                "Content-Disposition": f'attachment; filename="{ticker}_analysis.xlsx"',
+            },
+        )
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))
 

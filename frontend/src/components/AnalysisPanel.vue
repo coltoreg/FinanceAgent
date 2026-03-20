@@ -7,18 +7,58 @@
         <span v-if="rating" :class="ratingClass">{{ rating }}</span>
         <span v-if="fundScore" :class="fundScoreClass" class="text-xs">{{ fundScore }}</span>
       </div>
-      <button
-        v-if="state.status === 'complete'"
-        class="text-xs text-cyan-400 hover:text-cyan-300 border border-cyan-700 hover:border-cyan-500
-               px-3 py-1 rounded transition-colors flex items-center gap-1.5"
-        @click="emit('open-chat')"
-      >
-        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-3 3v-3z" />
-        </svg>
-        Ask AI
-      </button>
+      <div v-if="state.status === 'complete'" class="flex items-center gap-2">
+        <!-- PDF Export -->
+        <button
+          :disabled="exporting !== null"
+          class="text-xs text-rose-400 hover:text-rose-300 border border-rose-800 hover:border-rose-600
+                 px-2.5 py-1 rounded transition-colors flex items-center gap-1 disabled:opacity-40"
+          :title="exporting === 'pdf' ? 'Generating PDF…' : 'Download PDF report'"
+          @click="handleExport('pdf')"
+        >
+          <svg v-if="exporting === 'pdf'" class="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+          </svg>
+          <svg v-else class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+          </svg>
+          PDF
+        </button>
+
+        <!-- Excel Export -->
+        <button
+          :disabled="exporting !== null"
+          class="text-xs text-emerald-400 hover:text-emerald-300 border border-emerald-800 hover:border-emerald-600
+                 px-2.5 py-1 rounded transition-colors flex items-center gap-1 disabled:opacity-40"
+          :title="exporting === 'excel' ? 'Generating Excel…' : 'Download Excel workbook'"
+          @click="handleExport('excel')"
+        >
+          <svg v-if="exporting === 'excel'" class="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+          </svg>
+          <svg v-else class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 10h18M3 14h18M10 3v18M14 3v18M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          Excel
+        </button>
+
+        <!-- Ask AI -->
+        <button
+          class="text-xs text-cyan-400 hover:text-cyan-300 border border-cyan-700 hover:border-cyan-500
+                 px-3 py-1 rounded transition-colors flex items-center gap-1.5"
+          @click="emit('open-chat')"
+        >
+          <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-3 3v-3z" />
+          </svg>
+          Ask AI
+        </button>
+      </div>
     </div>
 
     <!-- Live market data bar (shown once complete) -->
@@ -126,6 +166,7 @@
 import { ref, computed } from 'vue'
 import { marked } from 'marked'
 import type { TickerState } from '@/stores/analysis'
+import { exportReport } from '@/api/client'
 import FinancialTables from './FinancialTables.vue'
 import ValuationPanel from './ValuationPanel.vue'
 import PeerComparisonPanel from './PeerComparisonPanel.vue'
@@ -153,6 +194,19 @@ const tabs = [
 ]
 
 const activeTab = ref('report')
+const exporting = ref<'pdf' | 'excel' | null>(null)
+
+async function handleExport(format: 'pdf' | 'excel') {
+  if (!props.state.result || exporting.value !== null) return
+  exporting.value = format
+  try {
+    await exportReport(format, props.state.result as Record<string, any>)
+  } catch (err) {
+    console.error('Export failed:', err)
+  } finally {
+    exporting.value = null
+  }
+}
 
 const newsCount = computed(() => props.state.result?.news_items?.length ?? 0)
 

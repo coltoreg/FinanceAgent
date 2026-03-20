@@ -48,3 +48,31 @@ export async function getHistory(ticker: string, limit = 10): Promise<HistoryRec
   const data = await res.json()
   return data.records ?? []
 }
+
+export async function exportReport(
+  format: 'pdf' | 'excel',
+  context: Record<string, any>,
+): Promise<void> {
+  const res = await fetch(`${API_BASE}/export/${format}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ context }),
+  })
+
+  if (!res.ok) {
+    const text = await res.text().catch(() => 'Unknown error')
+    throw new Error(`Export failed ${res.status}: ${text}`)
+  }
+
+  const blob = await res.blob()
+  const ticker = (context.ticker ?? 'report').toUpperCase()
+  const ext = format === 'pdf' ? 'pdf' : 'xlsx'
+  const filename = `${ticker}_analysis.${ext}`
+
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = filename
+  a.click()
+  URL.revokeObjectURL(url)
+}

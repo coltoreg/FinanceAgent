@@ -64,6 +64,8 @@ User（CLI 或 Web UI）
 │   POST /api/compare/stream  ── 雙股並行對比             │
 │   POST /api/chat            ── LLM Q&A                 │
 │   GET  /api/history/{ticker}── 歷史記錄查詢             │
+│   POST /api/export/pdf      ── 下載 PDF 報告            │
+│   POST /api/export/excel    ── 下載 Excel 活頁簿        │
 └──────────────────────┬──────────────────────────────────┘
                        │ SSE / JSON
                        ▼
@@ -72,6 +74,7 @@ User（CLI 或 Web UI）
 │  Single / Compare 模式 │ 即時進度條 │ 7-Tab 分析面板          │
 │  即時股價欄 (MarketDataBar)                                   │
 │  Report │ Financials │ Valuation │ Peers │ Debate │ News │ Sources │
+│  PDF 匯出按鈕 │ Excel 匯出按鈕                                │
 │  ChatPanel (浮動 Q&A 側抽屜)                                  │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -92,9 +95,10 @@ User（CLI 或 Web UI）
 | **財務三表 JSON** | Claude Tool Use 強制輸出結構化 JSON：損益表、資產負債表、現金流量表，含衍生指標（成長率、毛利率、ROE/ROA） |
 | **RAG 來源索引** | 每筆分析追蹤 RAG 檢索文件（doc ID、RRF 分數、觸發查詢、內容預覽），可點擊直連 SEC EDGAR 原始申報頁面 |
 | **跨會話記憶** | ChromaDB 持久化儲存每次分析結果，下次分析同一 ticker 自動載入歷史論文，追蹤評級演變與基本面趨勢 |
+| **PDF / Excel 匯出** | 一鍵下載完整分析報告——PDF（封面、報告、財務三表、估值、同業對比、辯論記錄）及 Excel 活頁簿（5 個分頁：Summary、Financial Statements、Valuation、Peer Comparison、Debate Transcript） |
 | **雙 Provider** | 一個 env var 切換 `LLM_PROVIDER=anthropic` 或 `LLM_PROVIDER=bedrock`，不改任何 agent 代碼 |
 | **LangSmith Tracing** | 全鏈路追蹤：RAG 檢索步驟、LLM 呼叫、Tool Use、辯論輪次，面試時可即時展示 Agent 思考過程 |
-| **Web UI** | Vue 3 + SSE 即時串流進度、Single / Compare 雙模式、7-Tab 分析面板、浮動 AI 問答側抽屜 |
+| **Web UI** | Vue 3 + SSE 即時串流進度、Single / Compare 雙模式、7-Tab 分析面板、PDF/Excel 匯出按鈕、浮動 AI 問答側抽屜 |
 
 ---
 
@@ -108,6 +112,7 @@ Memory         ChromaDB (semantic search) + JSON files (full record backup)
 Financial Data SEC EDGAR XBRL API (30+ GAAP concepts) + yfinance (歷史/即時/新聞)
 Tracing        LangSmith (wrap_anthropic + @traceable decorators)
 Backend API    FastAPI + uvicorn (SSE streaming)
+Export         fpdf2（PDF 生成）+ openpyxl（Excel 活頁簿）
 Frontend       Vue 3 + Pinia + Tailwind CSS + Vite
 CLI            Typer + Rich (表格、進度條、彩色輸出)
 Language       Python 3.11+ / TypeScript
@@ -139,6 +144,7 @@ FinAgent/
 │   ├── tools/
 │   │   ├── sec_retriever.py         # HybridRetriever + SEC EDGAR API
 │   │   ├── stock_utils.py           # MA / RSI / MACD 計算 + get_live_quote() + get_stock_news()
+│   │   ├── exporter.py              # PDF（fpdf2）+ Excel（openpyxl）報告生成
 │   │   └── tracing.py               # LangSmith 設定 + Provider 切換 + resolve_model_id
 │   │
 │   └── workflow/
@@ -158,7 +164,7 @@ FinAgent/
 │       ├── composables/
 │       │   └── useSSE.ts            # fetch + ReadableStream SSE 解析
 │       ├── api/
-│       │   └── client.ts            # sendChat() / getHistory()
+│       │   └── client.ts            # sendChat() / getHistory() / exportReport()
 │       └── components/
 │           ├── TickerForm.vue       # 股票代碼輸入表單（Single / Compare 切換）
 │           ├── ProgressTracker.vue  # 11 步驟進度條
@@ -335,6 +341,39 @@ RAG Retrieved Documents  (Hybrid Search: ChromaDB + BM25 + RRF)
   └─────────────────────────────────────────────────────┘
 ```
 
+### 匯出功能（PDF & Excel）
+
+分析完成後，面板標題列會顯示 **PDF** 和 **Excel** 匯出按鈕（與「Ask AI」並排）：
+
+```
+NVDA  [STRONG BUY]  [STRONG]    [PDF]  [Excel]  [Ask AI]
+```
+
+**PDF 報告** — 由 `fpdf2` 生成的多頁文件：
+
+| 章節 | 內容 |
+|------|------|
+| 封面 | Ticker、投資評級 badge、即時股價摘要、生成時間戳 |
+| 投資報告 | 完整最終報告（去除 Markdown 標記） |
+| 財務三表 | 損益表、資產負債表、現金流量表 |
+| 估值分析 | DCF 模型表格 + 相對倍數表格 + 方法論說明 |
+| 同業競爭 | 同業指標對比表格 + 競爭優劣勢列表 |
+| 辯論記錄 | Analyst ↔ Critic 完整辯論逐字稿（按輪次） |
+
+**Excel 活頁簿** — 由 `openpyxl` 生成的多分頁 `.xlsx`：
+
+| 分頁 | 內容 |
+|------|------|
+| Summary | 關鍵指標（評級、股價、52 週區間、市值）+ 完整報告文字 |
+| Financial Statements | 損益表、資產負債表、現金流量表（各含子標題） |
+| Valuation | DCF 模型 + 相對倍數估值 |
+| Peer Comparison | 同業指標對比表 + 競爭定位 |
+| Debate Transcript | 按輪次顯示的辯論記錄，Analyst/Critic 以不同顏色區分 |
+
+檔案直接在瀏覽器下載，命名為 `{TICKER}_analysis.pdf` / `{TICKER}_analysis.xlsx`。
+
+---
+
 ### Chat Panel
 
 點擊「Ask AI」後開啟右側浮動抽屜，以 Claude Haiku 回答關於當前分析結果的任何問題：
@@ -356,10 +395,12 @@ Ask AI — NVDA
 
 | Method | Path | 說明 |
 |--------|------|------|
-| `POST` | `/api/analyze/stream` | SSE 串流：單一 ticker 分析，推送 9 個進度事件 + 最終結果 |
+| `POST` | `/api/analyze/stream` | SSE 串流：單一 ticker 分析，推送 11 個進度事件 + 最終結果 |
 | `POST` | `/api/compare/stream` | SSE 串流：兩個 ticker 並行分析，事件以 `ticker` 欄位區分 |
 | `POST` | `/api/chat` | JSON：以分析結果為 context 的 LLM Q&A |
 | `GET` | `/api/history/{ticker}` | JSON：從 MemoryStore 取得歷史分析記錄 |
+| `POST` | `/api/export/pdf` | Binary：生成並回傳 PDF 投資報告 |
+| `POST` | `/api/export/excel` | Binary：生成並回傳 Excel 活頁簿（`.xlsx`） |
 | `GET` | `/api/health` | 健康檢查 |
 
 ### SSE 事件格式
@@ -654,6 +695,8 @@ self.model  = resolve_model_id(model)   # 自動映射 provider-specific model I
 | `yfinance` | 股票歷史數據與公司資訊 |
 | `fastapi` | Web API 框架 |
 | `uvicorn` | ASGI 伺服器（SSE 串流支援） |
+| `fpdf2` | PDF 報告生成（純 Python） |
+| `openpyxl` | Excel 活頁簿生成 |
 | `typer` | CLI 框架 |
 | `rich` | 終端美化輸出 |
 | Vue 3 + Pinia | 前端框架 + 狀態管理 |
